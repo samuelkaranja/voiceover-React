@@ -1,0 +1,25 @@
+.player {
+  padding: 10px;
+}
+
+.player .i img {
+  width: 30vh;
+  padding: 15px 0;
+}
+
+.player span {
+  display: block;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  padding-top: 10px;
+}
+
+/* ................ Desktop ................. */
+
+@media only screen and (min-width: 768px) {
+  .player .i img {
+    width: 35vh;
+    padding: 15px 0;
+  }
+}

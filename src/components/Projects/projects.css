@@ -1,3 +1,17 @@
+.projects .image {
+  text-align: center;
+}
+
+.projects .image img {
+  height: 30vh;
+}
+
+.projects h2 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 500;
+}
+
 .projects .tb {
   width: 90%;
   margin: 0 auto;
@@ -26,4 +40,20 @@
 
 .projects .tb h3 {
   text-align: left;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+/* ................ Desktop ................. */
+
+@media only screen and (min-width: 768px) {
+  .projects {
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .projects .react-tabs__tab {
+    width: 40%;
+  }
 }
