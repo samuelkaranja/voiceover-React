@@ -1,0 +1,47 @@
+.artist {
+  padding: 20px 10px;
+  text-align: center;
+}
+
+.artist img {
+  height: 20vh;
+}
+
+.artist h2 {
+  font-family: italic;
+  font-size: 2rem;
+  text-decoration: underline;
+}
+
+.artist h3 {
+  text-align: left;
+  font-size: 1.55rem;
+  font-weight: 600;
+}
+
+.artist p {
+  text-align: left;
+  line-height: 1.8;
+  font-size: 17px;
+}
+
+.artist span {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.artist a {
+  color: purple;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/* ................ Desktop ................. */
+
+@media only screen and (min-width: 768px) {
+  .artist {
+    width: 60%;
+    margin: 0 auto;
+    padding: 30px 10px;
+  }
+}

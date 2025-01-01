@@ -1,0 +1,29 @@
+.projects .tb {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.projects .react-tabs {
+  text-align: center;
+}
+
+.projects .react-tabs__tab-list {
+  padding: 0;
+  border-bottom: none;
+  margin: 0 auto;
+}
+
+.projects .react-tabs__tab {
+  width: 90%;
+  text-align: center;
+  font-size: 18px;
+}
+
+.projects .react-tabs__tab--selected {
+  background-color: purple;
+  color: #fff;
+}
+
+.projects .tb h3 {
+  text-align: left;
+}
