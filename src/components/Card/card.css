@@ -1,0 +1,36 @@
+.card {
+  margin-bottom: 10px;
+}
+
+.card img {
+  width: 23rem;
+  height: 25vh;
+}
+
+.card .body {
+  padding: 10px 12px;
+}
+
+.card .body a {
+  display: block;
+  color: #333;
+  font-size: 22px;
+  font-weight: 500;
+  text-decoration: none;
+  padding-bottom: 5px;
+}
+
+.card .body a:hover {
+  text-decoration: underline;
+  padding-bottom: 5px;
+}
+
+.card .body small {
+  display: block;
+  color: #6c757d;
+  margin-bottom: 6px;
+}
+
+.card .body span {
+  font-size: 15px;
+}

@@ -1,0 +1,53 @@
+.sociallinks .social {
+  width: 90%;
+  margin: 0 auto 20px auto;
+  background-color: #fff;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px #888888;
+}
+
+.sociallinks .social h2 {
+  font-size: 1.75rem;
+  font-weight: 500;
+  line-height: 1.2;
+  margin: 0.5rem 0;
+}
+
+.sociallinks .social span {
+  display: block;
+  padding: 5px 0;
+}
+
+.sociallinks .social h4 {
+  text-decoration: underline;
+  font-weight: 400;
+}
+
+.sociallinks .social ul {
+  list-style-type: none;
+}
+
+.sociallinks .social ul li {
+  display: inline-block;
+  padding: 0 20px;
+  font-size: 20px;
+}
+
+.sociallinks .social ul li a {
+  color: #333;
+}
+
+.sociallinks .social ul li a:hover {
+  cursor: pointer;
+}
+
+/* ................ Desktop ................. */
+
+@media only screen and (min-width: 768px) {
+  .sociallinks .social {
+    width: 30%;
+    margin: 0 auto 20px auto;
+  }
+}

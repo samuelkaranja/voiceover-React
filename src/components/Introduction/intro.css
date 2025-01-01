@@ -1,0 +1,33 @@
+.intro {
+  padding: 15px;
+  background: #f5f5f5;
+  text-align: center;
+}
+
+.intro h4 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.intro img {
+  height: 22vh;
+  margin: 10px 0;
+}
+
+.intro button {
+  background-color: purple;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 60px;
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+/* ................ Desktop ................. */
+
+@media only screen and (min-width: 768px) {
+  .intro .more {
+    width: 50%;
+    margin: 0 auto;
+  }
+}

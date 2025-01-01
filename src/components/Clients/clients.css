@@ -1,0 +1,19 @@
+.clients h2 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.clients img {
+  width: 140px;
+  height: 20vh;
+  margin: 0 30px;
+}
+
+/* ................ Desktop ................. */
+
+@media only screen and (min-width: 768px) {
+  .clients .slider {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
