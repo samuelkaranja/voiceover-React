@@ -3,6 +3,7 @@ export { default as Intro } from "./Introduction/Intro";
 export { default as Artist } from "./Artist/Artist";
 export { default as Projects } from "./Projects/Projects";
 export { default as AudioPlayer } from "./AudioPlayer/AudioPlayer";
+export { default as VideoPlayer } from "./VideoPlayer/VideoPlayer";
 export { default as Clients } from "./Clients/Clients";
 export { default as Studio } from "./Studio/Studio";
 export { default as Card } from "./Card/Card";

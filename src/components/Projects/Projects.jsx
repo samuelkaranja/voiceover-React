@@ -6,6 +6,8 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import AudioPlayer from "../AudioPlayer/AudioPlayer";
 import { audios } from "../../assets/Gallery/data";
+import { videos } from "../../assets/Gallery/data";
+import VideoPlayer from "../VideoPlayer/VideoPlayer";
 
 const responsive = {
   superLargeDesktop: {
@@ -27,7 +29,7 @@ const responsive = {
   },
 };
 
-console.log(audios);
+console.log(videos);
 
 const Projects = () => {
   return (
@@ -64,7 +66,22 @@ const Projects = () => {
             </div>
           </TabPanel>
           <TabPanel>
-            <h2>Any content 2</h2>
+            <h3>News</h3>
+            <div className="p">
+              <Carousel
+                responsive={responsive}
+                swipeable={true}
+                draggable={true}
+              >
+                {videos && videos.length > 0 ? (
+                  videos.map((video) => (
+                    <VideoPlayer video={video} key={video.id} />
+                  ))
+                ) : (
+                  <h2>No Videos Found!</h2>
+                )}
+              </Carousel>
+            </div>
           </TabPanel>
         </Tabs>
       </div>
