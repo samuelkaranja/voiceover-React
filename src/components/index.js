@@ -1,3 +1,4 @@
+export { default as NavBar } from "./Navigation/NavBar";
 export { default as Banner } from "./Banner/Banner";
 export { default as Intro } from "./Introduction/Intro";
 export { default as Artist } from "./Artist/Artist";
