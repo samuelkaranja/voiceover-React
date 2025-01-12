@@ -1,4 +1,4 @@
-import { Banner, Clients, Intro, Studio } from "../../components";
+import { Banner, Clients, Intro, News, Studio } from "../../components";
 import "./home.css";
 
 const Home = () => {
@@ -8,6 +8,7 @@ const Home = () => {
       <Intro />
       <Clients />
       <Studio />
+      <News />
     </>
   );
 };

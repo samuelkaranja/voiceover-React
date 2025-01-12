@@ -1,0 +1,11 @@
+.news {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.news h2 {
+  text-decoration: underline;
+  text-align: center;
+  padding-bottom: 20px;
+}

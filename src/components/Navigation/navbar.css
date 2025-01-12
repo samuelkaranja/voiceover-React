@@ -5,6 +5,7 @@
   left: 0;
   background-color: transparent;
   z-index: var(--z-fixed);
+  border-bottom: 1px dotted #333;
 }
 
 .nav {
@@ -21,6 +22,11 @@
   transition: color 0.4s;
   font-size: 25px;
   font-family: italic;
+}
+
+.nav__logo:hover {
+  color: var(--first-color);
+  cursor: pointer;
 }
 
 .nav__toggle,

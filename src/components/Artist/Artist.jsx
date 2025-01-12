@@ -23,7 +23,7 @@ const Artist = () => {
         make your project unforgettable!
       </p>
       <span>
-        Don't believe me? <Link to="/">Have a Listen</Link>
+        Don't believe me? <Link to="/gallery">Have a Listen</Link>
       </span>
     </div>
   );

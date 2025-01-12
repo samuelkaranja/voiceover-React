@@ -4,7 +4,7 @@
 }
 
 .artist img {
-  height: 20vh;
+  height: 25vh;
 }
 
 .artist h2 {
@@ -43,5 +43,9 @@
     width: 60%;
     margin: 0 auto;
     padding: 30px 10px;
+  }
+
+  .artist img {
+    height: 30vh;
   }
 }

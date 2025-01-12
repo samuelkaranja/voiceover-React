@@ -3,7 +3,7 @@ import "./gallery.css";
 
 const Gallery = () => {
   return (
-    <div>
+    <div className="gallery">
       <Projects />
     </div>
   );

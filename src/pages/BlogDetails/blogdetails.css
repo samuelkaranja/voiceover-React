@@ -1,6 +1,7 @@
 .details {
   width: 95%;
   margin: 0 auto;
+  padding: 40px 0;
 }
 
 .details img {
@@ -12,6 +13,7 @@
 .details h2 {
   font-size: 2rem;
   margin: 5px 0;
+  text-decoration: underline;
 }
 
 .details p {

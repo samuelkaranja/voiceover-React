@@ -1,3 +1,7 @@
+.blog {
+  padding: 30px 0;
+}
+
 .blog .popular,
 .blog .technology {
   width: 80%;

@@ -2,6 +2,7 @@ export { default as NavBar } from "./Navigation/NavBar";
 export { default as Banner } from "./Banner/Banner";
 export { default as Intro } from "./Introduction/Intro";
 export { default as Artist } from "./Artist/Artist";
+export { default as News } from "./News/News";
 export { default as Projects } from "./Projects/Projects";
 export { default as AudioPlayer } from "./AudioPlayer/AudioPlayer";
 export { default as VideoPlayer } from "./VideoPlayer/VideoPlayer";
