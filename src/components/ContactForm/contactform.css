@@ -1,10 +1,88 @@
-.contact {
-  padding-top: 10px;
+.contact-form {
+  padding: 10px 0;
 }
 
-.contact h2 {
+.contact-form h2 {
   text-align: center;
   color: purple;
   font-size: 2rem;
   font-weight: 500;
+}
+
+.contact-form form {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.contact-form .more {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-form label {
+  display: block;
+  font-size: 15px;
+  font-weight: 400;
+  padding-bottom: 6px;
+}
+
+.contact-form input {
+  height: 4vh;
+  border: none;
+  border-radius: 5px;
+  padding: 3px 12px;
+  margin-bottom: 18px;
+}
+
+.contact-form input:focus {
+  outline: none;
+}
+
+.contact-form .name,
+.contact-form .number {
+  width: 80%;
+}
+
+.contact-form .email {
+  width: 90%;
+}
+
+.contact-form textarea {
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+}
+
+.contact-form textarea:focus {
+  outline: none;
+}
+
+.contact-form .form-btn {
+  width: 100%;
+  background: purple;
+  color: #fff;
+  margin: 10px 0;
+  font-size: 15px;
+}
+
+/* ................ Desktop ................. */
+
+@media only screen and (min-width: 768px) {
+  .contact-form {
+    width: 40%;
+    margin: 0 auto;
+  }
+
+  .contact-form .name,
+  .contact-form .number {
+    width: 100%;
+  }
+
+  .contact-form .email {
+    width: 100%;
+  }
+
+  .contact-form textarea {
+    width: 100%;
+  }
 }
