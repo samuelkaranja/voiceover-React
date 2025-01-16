@@ -1,8 +1,9 @@
-import { Card } from "../../components";
 import "./blog.css";
+import { Card } from "../../components";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import { blogs } from "../../assets/Blog/Data";
+import { useContext } from "react";
+import { GlobalContext } from "../../Context/Context";
 
 const responsive = {
   superLargeDesktop: {
@@ -25,24 +26,20 @@ const responsive = {
 };
 
 const Blog = () => {
+  const { news } = useContext(GlobalContext);
+
   return (
     <div className="blog">
       <div className="popular">
         <h2>Most Popular</h2>
         <Carousel responsive={responsive} swipeable={true} draggable={true}>
-          {blogs && blogs.length > 0 ? (
-            blogs.map((blog) => <Card blog={blog} key={blog.id} />)
+          {news && news.length > 0 ? (
+            news.map((blog) => <Card blog={blog} key={blog.id} />)
           ) : (
             <h2>No Blogs Available</h2>
           )}
         </Carousel>
       </div>
-      {/* <div className="technology">
-        <h2>Technology</h2>
-        <Carousel responsive={responsive} swipeable={true} draggable={true}>
-          <Card />
-        </Carousel>
-      </div> */}
     </div>
   );
 };

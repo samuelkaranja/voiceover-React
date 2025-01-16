@@ -5,9 +5,9 @@ import "react-tabs/style/react-tabs.css";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import AudioPlayer from "../AudioPlayer/AudioPlayer";
-import { audios } from "../../assets/Gallery/data";
-import { videos } from "../../assets/Gallery/data";
 import VideoPlayer from "../VideoPlayer/VideoPlayer";
+import { useContext } from "react";
+import { GlobalContext } from "../../Context/Context";
 
 const responsive = {
   superLargeDesktop: {
@@ -29,9 +29,9 @@ const responsive = {
   },
 };
 
-console.log(videos);
-
 const Projects = () => {
+  const { sounds, clips } = useContext(GlobalContext);
+
   return (
     <div className="projects">
       <div className="image">
@@ -54,8 +54,8 @@ const Projects = () => {
                   swipeable={true}
                   draggable={true}
                 >
-                  {audios && audios.length > 0 ? (
-                    audios.map((audio) => (
+                  {sounds && sounds.length > 0 ? (
+                    sounds.map((audio) => (
                       <AudioPlayer audio={audio} key={audio.id} />
                     ))
                   ) : (
@@ -73,8 +73,8 @@ const Projects = () => {
                 swipeable={true}
                 draggable={true}
               >
-                {videos && videos.length > 0 ? (
-                  videos.map((video) => (
+                {clips && clips.length > 0 ? (
+                  clips.map((video) => (
                     <VideoPlayer video={video} key={video.id} />
                   ))
                 ) : (
