@@ -9,8 +9,6 @@ const GlobalState = ({ children }) => {
   const [sounds, setSounds] = useState(audios);
   const [clips, setClips] = useState(videos);
 
-  console.log(news);
-
   return (
     <GlobalContext.Provider value={{ news, sounds, clips }}>
       {children}

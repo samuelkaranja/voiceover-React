@@ -8,7 +8,10 @@ const Card = ({ blog }) => {
         <img src={blog?.image} alt={blog?.title} />
         <div className="body">
           <Link to={`/details/${blog?.id}/`}>{blog?.title}</Link>
-          <small>15 min read</small>
+          <div className="author">
+            <small>15 min read</small>
+            <small>Author: {blog?.author}</small>
+          </div>
           <span>{blog?.description.substring(0, 60) + "..."}</span>
         </div>
       </div>

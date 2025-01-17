@@ -9,6 +9,11 @@
   font-weight: 500;
 }
 
+.contact-form .message {
+  color: green;
+  text-align: center;
+}
+
 .contact-form form {
   width: 85%;
   margin: 0 auto;
@@ -51,6 +56,7 @@
   border: none;
   border-radius: 5px;
   padding: 8px 12px;
+  line-height: 1.8;
 }
 
 .contact-form textarea:focus {

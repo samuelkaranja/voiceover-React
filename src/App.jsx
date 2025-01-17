@@ -13,9 +13,9 @@ function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/details/:id" element={<BlogDetails />} />
           <Route path="/about-Me" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/contact-Us" element={<Contact />} />
         </Routes>
-        {/* <Footer /> */}
+        <Footer />
       </BrowserRouter>
     </>
   );
