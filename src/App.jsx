@@ -1,6 +1,6 @@
 import { Footer, NavBar } from "./components";
 import { About, Blog, BlogDetails, Contact, Gallery, Home } from "./pages";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 function App() {
   return (
@@ -14,6 +14,9 @@ function App() {
           <Route path="/details/:id" element={<BlogDetails />} />
           <Route path="/about-Me" element={<About />} />
           <Route path="/contact-Us" element={<Contact />} />
+
+          {/* Redirecting routes that don't exist */}
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
         <Footer />
       </BrowserRouter>
